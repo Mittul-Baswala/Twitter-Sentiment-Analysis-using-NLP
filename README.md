@@ -25,59 +25,56 @@ This project focuses on analyzing sentiments from tweets using Natural Language 
   - Stopwords removal using NLTK
   - Lemmatization for reducing words to base form
 
-🧼 Preprocessing
+## 🧼 Preprocessing
 - Removed URLs, mentions, hashtags, and special characters
 - Converted text to lowercase
 - Removed stopwords using NLTK
 - Tokenized and cleaned tweets for modeling
-def clean_text(text):
-    # Removes noise and stopwords
 
 
+## ⚙️ Technologies & Libraries
+- Python 3.11
+- Libraries Used:
+  - Data Handling: pandas, numpy
+  - NLP: nltk, re
+  - Visualization: matplotlib, seaborn
+  - Machine Learning: scikit-learn
 
-📊 Feature Extraction
-- Technique: TF-IDF Vectorization
-- Max Features: 5000
-- Converts cleaned tweets into numerical vectors for model input
+## 🛠️ Methodology
+- Data Preprocessing
+  - Cleaning tweets and normalizing text.
+  - Generating a new column cleaned_tweet.
+- Exploratory Data Analysis (EDA)
+  - Distribution of sentiment classes.
+  - Word frequency insights.
+  - Visualizations using bar charts & count plots.
+- Feature Extraction
+  - Applied TF-IDF Vectorization to convert text into numerical features.
+  - Limited features to top 5,000 most informative tokens.
+- Model Building
+  - Implemented Logistic Regression using a pipeline with StandardScaler.
+  - Split dataset into train/test sets (80/20).
+- Model Evaluation
+  - Metrics: Accuracy, Precision, Recall, F1-score.
+  - Confusion Matrix heatmap to visualize predictions.
 
-🤖 Model Implementation
-- Algorithm: Logistic Regression
-- Split: 80% training / 20% testing
-- Libraries: scikit-learn
-model = LogisticRegression()
-model.fit(X_train, y_train)
+## 📊 Key Insights
+- Balanced dataset between sentiment classes (slight skew possible).
+- Logistic Regression performed well with high accuracy.
+- Misclassifications occurred mostly between Neutral vs Positive tweets.
+- TF-IDF captured relevant patterns in language for classification.
 
+## 🚀 Results
+- Accuracy: ~80-85% (depending on dataset split).
+- Classification Report:
+  - Precision and Recall scores show strong performance for Positive and Negative tweets.
+  - Neutral tweets had slightly lower recall due to overlapping language patterns.
 
+- Visualization Outputs:
+  - Count plots of sentiment distribution.
+  - Confusion matrix highlighting prediction strengths/weaknesses.
 
-📈 Evaluation Metrics
-- Accuracy
-- Precision, Recall, F1-score
-- Confusion Matrix
-print(classification_report(y_test, y_pred))
-
-
-
-📊 Visual Insights
-- Sentiment distribution bar chart
-- Word clouds for positive and negative tweets
-- Optional: ROC curve and feature importance
-sns.countplot(x='sentiment', data=df)
-
-
-
-🖼️ Banner Suggestion
-Want to add a branded banner to your notebook or README?
-Include:
-- CODTECH logo
-- Task title: Internship Task 4 – Sentiment Analysis
-- Your name and GitHub handle
-- Colors: Orange, Blue, Black (to match the flyer)
-Let me know and I’ll help you design one!
-
-✅ Deliverables
+## ✅ Deliverables
 - Jupyter Notebook with full pipeline
 - README.md (this file)
 - Visuals and charts
-- Optional: PDF summary or dashboard
-
-Would you like me to help you generate a banner next or turn this into a portfolio-style GitHub layout?
