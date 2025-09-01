@@ -15,15 +15,15 @@
 This project focuses on analyzing sentiments from tweets using Natural Language Processing (NLP) techniques and Machine Learning models. The main objective is to classify tweets into sentiment categories such as Positive, Negative, and Neutral, providing insights into public opinion and trends.
 
 ## 📂 Dataset
-- Source: Twitter Sentiment Dataset [ https://www.kaggle.com/datasets/prakashpraba/twitter-sentiment-analysis-dataset]
+- Source: [Twitter Sentiment Dataset]( https://www.kaggle.com/datasets/prakashpraba/twitter-sentiment-analysis-dataset)
 - Columns:
-- tweet → Original tweet text
-- label → Sentiment label (0 = Negative, 1 = Neutral, 2 = Positive)
+  - tweet → Original tweet text
+  - label → Sentiment label (0 = Negative, 1 = Neutral, 2 = Positive)
 - Data Cleaning & Preprocessing:
-- Removal of URLs, mentions (@user), hashtags, numbers, and special characters
-- Conversion to lowercase
-- Stopwords removal using NLTK
-- Lemmatization for reducing words to base form
+  - Removal of URLs, mentions (@user), hashtags, numbers, and special characters
+  - Conversion to lowercase
+  - Stopwords removal using NLTK
+  - Lemmatization for reducing words to base form
 
 🧼 Preprocessing
 - Removed URLs, mentions, hashtags, and special characters
