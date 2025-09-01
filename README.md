@@ -69,7 +69,6 @@ This project focuses on analyzing sentiments from tweets using Natural Language 
 - Classification Report:
   - Precision and Recall scores show strong performance for Positive and Negative tweets.
   - Neutral tweets had slightly lower recall due to overlapping language patterns.
-
 - Visualization Outputs:
   - Count plots of sentiment distribution.
   - Confusion matrix highlighting prediction strengths/weaknesses.
@@ -78,3 +77,6 @@ This project focuses on analyzing sentiments from tweets using Natural Language 
 - Jupyter Notebook with full pipeline
 - README.md (this file)
 - Visuals and charts
+<img width="716" height="575" alt="Image" src="https://github.com/user-attachments/assets/fa0cbc82-0c73-4bca-abad-49f187c04cb9" />
+<img width="565" height="268" alt="Image" src="https://github.com/user-attachments/assets/04dcd0a5-bfb8-4bf9-94b7-4663e0e9cd25" />
+<img width="806" height="685" alt="Image" src="https://github.com/user-attachments/assets/19138440-0fcd-4325-8a09-9eadbad45828" />
